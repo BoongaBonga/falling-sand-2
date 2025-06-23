@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <button id="reset" onclick="reset()">reset</button>
+    <!--configs-->
+    <div id="configContainer">
+      <div id="colorConfig">
+        color <input type="color" id="colorInput" value="#FF0000" /> rainbow
+        <input type="checkbox" id="rainbowInput" />
+      </div>
+      <div id="brushSizeConfig">
+        brush size <input type="number" value="1" id="brushSizeInput" />
+      </div>
+      <div id="gravityConfig">
+        gravity
+        <input type="checkbox" id="gravityInput" checked="true" /> liquid
+        <input type="checkbox" id="liquidInput" onchange="enableLiquids()" />
+      </div>
+      <div id="heightConfig">
+        max height <input type="range" id="heightInput" value="10" />
+      </div>
+      <div id="reshreshConfig">
+        refresh rate(ms)
+        <input
+          type="number"
+          value="20"
+          id="refreshInput"
+          placeholder="number value in ms"
+          onchange="changeRefresh()"
+        />
+      </div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+canvas {
+  display: block;
+}
+
+#configContainer {
+  font-size: larger;
+  position: absolute;
+  bottom: 0;
+}
+#reset {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
