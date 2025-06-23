@@ -29,6 +29,12 @@ function reset() {
   arr = createMatrix(bottomX, bottomY);
   let minScreenWidth = document.getElementById("screenXsize").value;
   let minScreenHeight = document.getElementById("screenYsize").value;
+  if (minScreenWidth === "") {
+    minScreenWidth = 50;
+  }
+  if (minScreenHeight === "") {
+    minScreenHeight = 100;
+  }
   cols = minScreenWidth;
   rows = minScreenHeight;
   setup();

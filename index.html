@@ -14,17 +14,23 @@
 
   <body>
     <div id="options">
-      <button id="reset" onclick="reset()">reset</button>
-      <input
-        id="screenXsize"
-        placeholder="min width in px (50)"
-        type="number"
-      />
-      <input
-        id="screenYsize"
-        placeholder="min height in px (100)"
-        type="number"
-      />
+      <div>
+        <button id="reset" onclick="reset()">reset</button>
+        <input
+          id="screenXsize"
+          placeholder="min width in px (50)"
+          type="number"
+        />
+        <input
+          id="screenYsize"
+          placeholder="min height in px (100)"
+          type="number"
+        />
+      </div>
+      <div>
+        <button onclick="Import()">import</button>
+        <button onclick="Export()">export</button>
+      </div>
     </div>
     <!--configs-->
     <div id="configContainer">
