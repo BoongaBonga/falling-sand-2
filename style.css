@@ -16,7 +16,10 @@ canvas {
   position: absolute;
   bottom: 0;
 }
-#reset {
+#options {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   position: absolute;
   top: 0;
   right: 0;

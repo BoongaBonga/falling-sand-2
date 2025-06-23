@@ -13,7 +13,19 @@
   </head>
 
   <body>
-    <button id="reset" onclick="reset()">reset</button>
+    <div id="options">
+      <button id="reset" onclick="reset()">reset</button>
+      <input
+        id="screenXsize"
+        placeholder="min width in px (50)"
+        type="number"
+      />
+      <input
+        id="screenYsize"
+        placeholder="min height in px (100)"
+        type="number"
+      />
+    </div>
     <!--configs-->
     <div id="configContainer">
       <div id="colorConfig">

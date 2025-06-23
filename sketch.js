@@ -27,6 +27,11 @@ function enableLiquids() {
 function reset() {
   particleArr = [];
   arr = createMatrix(bottomX, bottomY);
+  let minScreenWidth = document.getElementById("screenXsize").value;
+  let minScreenHeight = document.getElementById("screenYsize").value;
+  cols = minScreenWidth;
+  rows = minScreenHeight;
+  setup();
 }
 
 //check if inbounds
