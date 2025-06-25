@@ -40,6 +40,21 @@ function reset() {
   setup();
 }
 
+//import
+function Export() {
+  let msg = JSON.stringify(particleArr);
+  navigator.clipboard.writeText(msg);
+}
+//export
+async function Import() {
+  promise = await navigator.clipboard.readText();
+  particleArr = JSON.parse(promise);
+  for (let i = 0; i < particleArr.length; i++) {
+    let p = particleArr[i];
+    arr[p.x][p.y] = p;
+  }
+}
+
 //check if inbounds
 function inBounds(x, y) {
   return x >= 0 && x < bottomX && y >= 0 && y < bottomY;
